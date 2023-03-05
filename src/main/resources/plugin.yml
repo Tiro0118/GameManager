@@ -1,0 +1,55 @@
+name: GameMode
+version: 1.0.0
+main: com.github.Tiro0118.GameMode
+authors: [ Tiro0118 ]
+description: ゲームモード変更プラグイン
+website: https://github.com/Tiro0118
+
+commands:
+  gm:
+    description: ゲームモード変更コマンド
+    aliases:
+      - gamemode
+      - mode
+      - /gm
+      - /gamemode
+      - /mode
+  survival:
+    description: サバイバルモードに変更コマンド
+    aliases:
+      - /survival
+  creative:
+    description: クリエイティブモードに変更コマンド
+    aliases:
+      - /creative
+  adventure:
+    description: アドベンチャーモードに変更コマンド
+    aliases:
+      - /adventure
+  spectator:
+    description: スペクテイターモードに変更コマンド
+    aliases:
+      - /spectator
+
+Permissions:
+  gm.*:
+    default: op
+    children:
+      gm.reload: true
+      gm.help: true
+      gm.survival: true
+      gm.creative: true
+      gm.adventure: true
+      gm.spectator: true
+  gm.reload:
+    default: op
+  gm.help:
+    default: op
+  gm.survival:
+    default: op
+  gm.creative:
+    default: op
+  gm.adventure:
+    default: op
+  gm.spectator:
+    default: op
